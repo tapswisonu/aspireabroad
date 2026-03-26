@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AspireAbroad LLP – Your Gateway to Global Careers</title>
+  <meta name="description" content="AspireAbroad LLP is a premium international recruitment agency connecting talent with global opportunities. Overseas recruitment, visa support, manpower supply, and HR consultancy." />
+  <meta name="keywords" content="overseas recruitment, international jobs, manpower supply, visa support, global careers, AspireAbroad" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js" defer></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js" defer></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========================= NAVBAR ========================= -->
+  <header id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <span class="logo-icon"><i class="fa-solid fa-globe"></i></span>
+        <span class="logo-text">Aspire<span class="logo-accent">Abroad</span></span> LLP
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#industries">Industries</a>
+        <a href="#contact" class="nav-cta">Contact Us</a>
+      </nav>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================= HERO ========================= -->
+  <section id="home" class="hero">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- Floating shapes -->
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-title" id="hero-title">
+        <span class="reveal-line">Your Gateway to</span>
+        <span class="reveal-line gradient-text">Global Careers</span>
+      </h1>
+      <p class="hero-sub" id="hero-sub">
+        We connect exceptional talent with world-class opportunities across 50+ countries.
+        Start your international career journey with confidence.
+      </p>
+      <div class="hero-btns" id="hero-btns">
+        <a href="#jobs" class="btn btn-primary" id="btn-apply">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#services" class="btn btn-outline">Explore Jobs <i class="fa-solid fa-compass"></i></a>
+      </div>
+      <div class="hero-stats" id="hero-stats">
+        <div class="hstat"><span>50+</span> Countries</div>
+        <div class="hstat"><span>10K+</span> Placements</div>
+        <div class="hstat"><span>15+</span> Years</div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ========================= TRUST STRIP ========================= -->
+  <section class="trust-strip">
+    <div class="ticker-wrapper">
+      <div class="ticker-track" id="ticker">
+        <span>Trusted Recruitment Partner</span>
+        <span class="dot">•</span>
+        <span>Global Hiring Solutions</span>
+        <span class="dot">•</span>
+        <span>Visa & Documentation Support</span>
+        <span class="dot">•</span>
+        <span>Manpower Supply</span>
+        <span class="dot">•</span>
+        <span>HR Consultancy</span>
+        <span class="dot">•</span>
+        <span>50+ Countries Served</span>
+        <span class="dot">•</span>
+        <span>10,000+ Successful Placements</span>
+        <span class="dot">•</span>
+        <span>99% Success Rate</span>
+        <span class="dot">•</span>
+        <!-- duplicate for seamless loop -->
+        <span>Trusted Recruitment Partner</span>
+        <span class="dot">•</span>
+        <span>Global Hiring Solutions</span>
+        <span class="dot">•</span>
+        <span>Visa & Documentation Support</span>
+        <span class="dot">•</span>
+        <span>Manpower Supply</span>
+        <span class="dot">•</span>
+        <span>HR Consultancy</span>
+        <span class="dot">•</span>
+        <span>50+ Countries Served</span>
+        <span class="dot">•</span>
+        <span>10,000+ Successful Placements</span>
+        <span class="dot">•</span>
+        <span>99% Success Rate</span>
+        <span class="dot">•</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= ABOUT ========================= -->
+  <section id="about" class="about section-pad">
+    <div class="floating-shapes shapes-subtle">
+      <div class="shape shape-a1"></div>
+      <div class="shape shape-a2"></div>
+    </div>
+    <div class="container about-grid">
+      <div class="about-img-wrap" id="about-img">
+        <div class="about-img-card">
+          <div class="about-img-inner">
+            <div class="about-stat-badge">
+              <strong>15+</strong>
+              <span>Years of Excellence</span>
+            </div>
+            <div class="about-globe-anim">
+              <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <div class="about-img-dots"></div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text" id="about-text">
+        <div class="section-tag">Our Story</div>
+        <h2 class="section-title">We Build <br /><span class="gradient-text">Global Careers</span></h2>
+        <p class="about-lead">We don't just recruit — we build global careers.</p>
+        <p class="about-body">
+          AspireAbroad LLP connects talent with international opportunities through a transparent, efficient, and candidate-first process. With over 15 years of industry expertise and a network spanning 50+ countries, we've placed 10,000+ professionals in roles that transform their lives.
+        </p>
+        <p class="about-body">
+          Our dedicated team of recruitment specialists understand both local talent pools and global market demands — ensuring every placement is a perfect match.
+        </p>
+        <div class="about-features">
+          <div class="feat-item"><i class="fa-solid fa-check-circle"></i> Transparent Process</div>
+          <div class="feat-item"><i class="fa-solid fa-check-circle"></i> Candidate-First Approach</div>
+          <div class="feat-item"><i class="fa-solid fa-check-circle"></i> End-to-End Support</div>
+          <div class="feat-item"><i class="fa-solid fa-check-circle"></i> Global Expertise</div>
+        </div>
+        <a href="#contact" class="btn btn-primary mt-4">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= WHY CHOOSE US ========================= -->
+  <section id="why" class="why section-pad">
+    <div class="container">
+      <div class="section-header" id="why-header">
+        <div class="section-tag">Why Us</div>
+        <h2 class="section-title">Why Choose <span class="gradient-text">AspireAbroad LLP?</span></h2>
+        <p class="section-sub">We go beyond recruitment — we're your career architects</p>
+      </div>
+      <div class="why-grid" id="why-grid">
+        <div class="why-card glass-card">
+          <div class="why-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Trusted Global Network</h3>
+          <p>Deep connections with leading employers in 50+ countries across every major industry.</p>
+        </div>
+        <div class="why-card glass-card">
+          <div class="why-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Fast Hiring Process</h3>
+          <p>Streamlined recruitment pipeline that gets you placed in weeks, not months.</p>
+        </div>
+        <div class="why-card glass-card">
+          <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Verified Candidates</h3>
+          <p>Rigorous screening and verification ensures quality and reliability at every level.</p>
+        </div>
+        <div class="why-card glass-card">
+          <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+          <h3>End-to-End Support</h3>
+          <p>From application to onboarding — we guide you through every step of the journey.</p>
+        </div>
+        <div class="why-card glass-card">
+          <div class="why-icon"><i class="fa-solid fa-eye"></i></div>
+          <h3>100% Transparency</h3>
+          <p>No hidden fees, no surprises. Complete visibility throughout your recruitment process.</p>
+        </div>
+        <div class="why-card glass-card">
+          <div class="why-icon"><i class="fa-solid fa-award"></i></div>
+          <h3>Industry Expertise</h3>
+          <p>Specialists in 6+ major industry verticals with deep market knowledge and insights.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= SERVICES ========================= -->
+  <section id="services" class="services section-pad">
+    <div class="container">
+      <div class="section-header" id="svc-header">
+        <div class="section-tag">What We Do</div>
+        <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+        <p class="section-sub">Comprehensive global recruitment solutions designed for you</p>
+      </div>
+      <div class="services-grid" id="services-grid">
+        <div class="svc-card glass-card" id="svc-1">
+          <div class="svc-icon-wrap">
+            <div class="svc-icon"><i class="fa-solid fa-plane-departure"></i></div>
+          </div>
+          <h3>Overseas Recruitment</h3>
+          <p>Connecting skilled professionals with top international employers across multiple industries and continents.</p>
+          <a href="#contact" class="svc-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="svc-card glass-card" id="svc-2">
+          <div class="svc-icon-wrap">
+            <div class="svc-icon"><i class="fa-solid fa-users-gear"></i></div>
+          </div>
+          <h3>Manpower Supply</h3>
+          <p>Providing businesses with reliable, verified, and skilled workforce solutions tailored to project demands.</p>
+          <a href="#contact" class="svc-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="svc-card glass-card" id="svc-3">
+          <div class="svc-icon-wrap">
+            <div class="svc-icon"><i class="fa-solid fa-stamp"></i></div>
+          </div>
+          <h3>Visa & Documentation</h3>
+          <p>Expert guidance through the entire visa application and documentation process for hassle-free immigration.</p>
+          <a href="#contact" class="svc-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="svc-card glass-card" id="svc-4">
+          <div class="svc-icon-wrap">
+            <div class="svc-icon"><i class="fa-solid fa-briefcase"></i></div>
+          </div>
+          <h3>HR Consultancy</h3>
+          <p>Strategic human resource advice and talent management solutions to optimize your global workforce.</p>
+          <a href="#contact" class="svc-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= JOBS ========================= -->
+  <section id="jobs" class="jobs section-pad">
+    <div class="container">
+      <div class="section-header" id="jobs-header">
+        <div class="section-tag">Opportunities</div>
+        <h2 class="section-title">Open <span class="gradient-text">Positions</span></h2>
+        <p class="section-sub">Explore international career opportunities across the globe</p>
+      </div>
+
+      <!-- Filter -->
+      <div class="jobs-filter" id="jobs-filter">
+        <button class="filter-btn active" data-filter="all">All Jobs</button>
+        <button class="filter-btn" data-filter="gulf">Gulf</button>
+        <button class="filter-btn" data-filter="europe">Europe</button>
+        <button class="filter-btn" data-filter="asia">Asia</button>
+      </div>
+
+      <!-- Job Cards -->
+      <div class="jobs-grid" id="jobs-grid">
+        <div class="job-card glass-card" data-region="gulf">
+          <div class="job-top">
+            <div class="job-badge gulf">Gulf</div>
+            <div class="job-type">Full-Time</div>
+          </div>
+          <h3 class="job-title">Civil Engineer</h3>
+          <div class="job-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Dubai, UAE</span>
+            <span><i class="fa-solid fa-money-bill-wave"></i> $3,000 – $5,000/mo</span>
+          </div>
+          <div class="job-tags">
+            <span>Construction</span>
+            <span>Engineering</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="job-card glass-card" data-region="gulf">
+          <div class="job-top">
+            <div class="job-badge gulf">Gulf</div>
+            <div class="job-type">Full-Time</div>
+          </div>
+          <h3 class="job-title">Scaffolding Supervisor</h3>
+          <div class="job-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Riyadh, KSA</span>
+            <span><i class="fa-solid fa-money-bill-wave"></i> $2,500 – $4,000/mo</span>
+          </div>
+          <div class="job-tags">
+            <span>Oil & Gas</span>
+            <span>Skilled Trade</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="job-card glass-card" data-region="europe">
+          <div class="job-top">
+            <div class="job-badge europe">Europe</div>
+            <div class="job-type">Full-Time</div>
+          </div>
+          <h3 class="job-title">Registered Nurse</h3>
+          <div class="job-meta">
+            <span><i class="fa-solid fa-location-dot"></i> London, UK</span>
+            <span><i class="fa-solid fa-money-bill-wave"></i> £3,500 – £4,800/mo</span>
+          </div>
+          <div class="job-tags">
+            <span>Healthcare</span>
+            <span>Medical</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="job-card glass-card" data-region="europe">
+          <div class="job-top">
+            <div class="job-badge europe">Europe</div>
+            <div class="job-type">Full-Time</div>
+          </div>
+          <h3 class="job-title">Software Developer</h3>
+          <div class="job-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Berlin, Germany</span>
+            <span><i class="fa-solid fa-money-bill-wave"></i> €4,000 – €7,000/mo</span>
+          </div>
+          <div class="job-tags">
+            <span>IT</span>
+            <span>Tech</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="job-card glass-card" data-region="asia">
+          <div class="job-top">
+            <div class="job-badge asia">Asia</div>
+            <div class="job-type">Contract</div>
+          </div>
+          <h3 class="job-title">Hotel Manager</h3>
+          <div class="job-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Singapore</span>
+            <span><i class="fa-solid fa-money-bill-wave"></i> SGD 5,000 – 8,000/mo</span>
+          </div>
+          <div class="job-tags">
+            <span>Hospitality</span>
+            <span>Management</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="job-card glass-card" data-region="gulf">
+          <div class="job-top">
+            <div class="job-badge gulf">Gulf</div>
+            <div class="job-type">Full-Time</div>
+          </div>
+          <h3 class="job-title">Process Technician</h3>
+          <div class="job-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Muscat, Oman</span>
+            <span><i class="fa-solid fa-money-bill-wave"></i> $2,000 – $3,500/mo</span>
+          </div>
+          <div class="job-tags">
+            <span>Manufacturing</span>
+            <span>Industrial</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= STATS ========================= -->
+  <section id="stats" class="stats-section">
+    <div class="stats-parallax-bg"></div>
+    <div class="container stats-grid" id="stats-grid">
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fa-solid fa-earth-americas"></i></div>
+        <div class="stat-num" data-target="50" data-suffix="+">0</div>
+        <div class="stat-label">Countries</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+        <div class="stat-num" data-target="10000" data-suffix="+">0</div>
+        <div class="stat-label">Placements</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+        <div class="stat-num" data-target="99" data-suffix="%">0</div>
+        <div class="stat-label">Success Rate</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="stat-num" data-target="15" data-suffix="+">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= INDUSTRIES ========================= -->
+  <section id="industries" class="industries section-pad">
+    <div class="container">
+      <div class="section-header" id="ind-header">
+        <div class="section-tag">Sectors We Serve</div>
+        <h2 class="section-title">Our <span class="gradient-text">Industries</span></h2>
+        <p class="section-sub">Domain expertise across the world's most dynamic sectors</p>
+      </div>
+      <div class="ind-grid" id="ind-grid">
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fa-solid fa-hard-hat"></i></div>
+          <div class="ind-overlay">
+            <i class="fa-solid fa-hard-hat ind-over-icon"></i>
+            <h3>Construction</h3>
+          </div>
+          <h3 class="ind-label">Construction</h3>
+        </div>
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fa-solid fa-oil-well"></i></div>
+          <div class="ind-overlay">
+            <i class="fa-solid fa-oil-well ind-over-icon"></i>
+            <h3>Oil & Gas</h3>
+          </div>
+          <h3 class="ind-label">Oil & Gas</h3>
+        </div>
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fa-solid fa-hospital"></i></div>
+          <div class="ind-overlay">
+            <i class="fa-solid fa-hospital ind-over-icon"></i>
+            <h3>Healthcare</h3>
+          </div>
+          <h3 class="ind-label">Healthcare</h3>
+        </div>
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="ind-overlay">
+            <i class="fa-solid fa-laptop-code ind-over-icon"></i>
+            <h3>Information Technology</h3>
+          </div>
+          <h3 class="ind-label">IT</h3>
+        </div>
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fa-solid fa-concierge-bell"></i></div>
+          <div class="ind-overlay">
+            <i class="fa-solid fa-concierge-bell ind-over-icon"></i>
+            <h3>Hospitality</h3>
+          </div>
+          <h3 class="ind-label">Hospitality</h3>
+        </div>
+        <div class="ind-card">
+          <div class="ind-icon"><i class="fa-solid fa-industry"></i></div>
+          <div class="ind-overlay">
+            <i class="fa-solid fa-industry ind-over-icon"></i>
+            <h3>Manufacturing</h3>
+          </div>
+          <h3 class="ind-label">Manufacturing</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= TESTIMONIALS ========================= -->
+  <section id="testimonials" class="testimonials section-pad">
+    <div class="container">
+      <div class="section-header" id="test-header">
+        <div class="section-tag">Success Stories</div>
+        <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+        <p class="section-sub">Real stories from real professionals placed around the world</p>
+      </div>
+      <div class="testimonial-slider" id="testimonial-slider">
+        <div class="testimonial-track" id="t-track">
+          <div class="t-card glass-card">
+            <div class="t-quote"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="t-text">"AspireAbroad LLP changed my life. Within 6 weeks of registering, I had an offer in Dubai with a salary 3x what I was earning. Their support throughout visa processing was exceptional."</p>
+            <div class="t-author">
+              <div class="t-avatar">RK</div>
+              <div>
+                <strong>Rahul Kumar</strong>
+                <span>Civil Engineer → Dubai, UAE</span>
+              </div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+          <div class="t-card glass-card">
+            <div class="t-quote"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="t-text">"The team at AspireAbroad LLP is incredibly professional. They matched me with the perfect nursing position in London. Every step was transparent — zero hidden costs."</p>
+            <div class="t-author">
+              <div class="t-avatar">PS</div>
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>Registered Nurse → London, UK</span>
+              </div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+          <div class="t-card glass-card">
+            <div class="t-quote"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="t-text">"From resume optimization to visa documentation, AspireAbroad LLP handled everything. I'm now working as an IT consultant in Germany and loving every moment of it."</p>
+            <div class="t-author">
+              <div class="t-avatar">AM</div>
+              <div>
+                <strong>Arjun Mehta</strong>
+                <span>IT Consultant → Berlin, Germany</span>
+              </div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+          <div class="t-card glass-card">
+            <div class="t-quote"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="t-text">"We used AspireAbroad LLP to supply 200+ skilled workers for our Saudi Arabia project. The quality, vetting, and speed were unmatched. Will always be our first call."</p>
+            <div class="t-author">
+              <div class="t-avatar">MH</div>
+              <div>
+                <strong>Mohammed Hassan</strong>
+                <span>Project Director, Al-Rashid Construction</span>
+              </div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="slider-controls">
+          <button class="slider-btn" id="prev-btn" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="slider-dots" id="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="slider-btn" id="next-btn" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CTA ========================= -->
+  <section id="cta" class="cta-section">
+    <div class="cta-bg-anim"></div>
+    <div class="floating-shapes">
+      <div class="shape shape-c1"></div>
+      <div class="shape shape-c2"></div>
+    </div>
+    <div class="container cta-content" id="cta-content">
+      <h2 class="cta-title" id="cta-title">
+        Empowering Careers.<br />
+        Delivering Talent.<br />
+        <span class="gradient-text">Globally.</span>
+      </h2>
+      <p class="cta-sub">Join thousands of professionals who transformed their careers with AspireAbroad LLP</p>
+      <a href="#contact" class="btn btn-cta pulse-btn">Contact Us Today <i class="fa-solid fa-paper-plane"></i></a>
+    </div>
+  </section>
+
+  <!-- ========================= CONTACT ========================= -->
+  <section id="contact" class="contact section-pad">
+    <div class="container">
+      <div class="section-header" id="contact-header">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Start Your <span class="gradient-text">Journey</span></h2>
+        <p class="section-sub">Take the first step toward your global career today</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" id="contact-info">
+          <div class="cinfo-card glass-card">
+            <div class="cinfo-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <strong>Call Us</strong>
+              <span>+91 98765 43210</span>
+            </div>
+          </div>
+          <div class="cinfo-card glass-card">
+            <div class="cinfo-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <strong>Email Us</strong>
+              <span>info@aspireabroad.com</span>
+            </div>
+          </div>
+          <div class="cinfo-card glass-card">
+            <div class="cinfo-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <strong>Visit Us</strong>
+              <span>AspireAbroad LLP, Mumbai, India</span>
+            </div>
+          </div>
+          <div class="cinfo-card glass-card">
+            <div class="cinfo-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <strong>Working Hours</strong>
+              <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap" id="contact-form-wrap">
+          <form class="contact-form glass-card" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fname" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" name="femail" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fphone">Phone Number</label>
+                <input type="tel" id="fphone" name="fphone" placeholder="+91 98765 43210" />
+              </div>
+              <div class="form-group">
+                <label for="fservice">Service Needed</label>
+                <select id="fservice" name="fservice">
+                  <option value="">Select a service</option>
+                  <option>Overseas Recruitment</option>
+                  <option>Manpower Supply</option>
+                  <option>Visa & Documentation</option>
+                  <option>HR Consultancy</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" name="fmessage" rows="4" placeholder="Tell us about your requirements..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="form-success">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Thank you! We'll get back to you within 24 hours.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer id="footer" class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-icon"><i class="fa-solid fa-globe"></i></span>
+          <span class="logo-text">Aspire<span class="logo-accent">Abroad</span>LLP</span>
+        </a>
+        <p>Your trusted international partner for global career placement and manpower solutions. Connecting talent worldwide since 2009.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#jobs">Job Listings</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Overseas Recruitment</a></li>
+          <li><a href="#services">Manpower Supply</a></li>
+          <li><a href="#services">Visa & Documentation</a></li>
+          <li><a href="#services">HR Consultancy</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a></li>
+          <li><a href="mailto:info@aspireabroad.com"><i class="fa-solid fa-envelope"></i> info@aspireabroad.com</a></li>
+          <li><a href="#"><i class="fa-solid fa-location-dot"></i> Mumbai, India</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 AspireAbroad LLP. All Rights Reserved.</p>
+        <p>Designed with <i class="fa-solid fa-heart" style="color:#FF4D4D"></i> for global dreamers</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts.js" defer></script>
+</body>
+</html>

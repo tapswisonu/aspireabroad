@@ -1,0 +1,257 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all var(--transition-slow);
+  border: none;
+  font-size: 0.95rem;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: all 0.5s ease;
+}
+
+.btn:hover::after {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 25px rgba(211, 47, 47, 0.5), 0 0 15px rgba(211, 47, 47, 0.3);
+}
+
+.btn-secondary {
+  background: var(--bg-white);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-color);
+  color: var(--white);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 25px rgba(10, 25, 47, 0.3);
+}
+
+/* Base Card */
+.card {
+  background: var(--bg-white);
+  border-radius: var(--border-radius);
+  padding: 30px 25px;
+  box-shadow: var(--box-shadow);
+  transition: all var(--transition-slow);
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--box-shadow-hover), 0 0 20px rgba(10, 25, 47, 0.05); /* Glow */
+}
+
+/* Glassmorphism Classes */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: var(--border-radius);
+}
+
+/* Skeleton Loading UI */
+.skeleton {
+  background: #e2e5e7;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: 40px 100%;
+  background-repeat: no-repeat;
+  background-position: left -40px top 0;
+  animation: shine 1.2s ease infinite;
+  border-radius: 4px;
+}
+
+@keyframes shine {
+  to {
+    background-position: right -40px top 0;
+  }
+}
+
+/* Glass & Organic Shapes (Google Lens Style) */
+.organic-shape {
+  position: absolute;
+  filter: blur(60px);
+  opacity: 0.6;
+  z-index: 0;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  animation: morph 12s ease-in-out infinite both alternate;
+  pointer-events: none;
+}
+
+@keyframes morph {
+  0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; transform: translate(0, 0) rotate(0deg) scale(1); }
+  34% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; transform: translate(30px, -50px) rotate(15deg) scale(1.05); }
+  67% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; transform: translate(-20px, 30px) rotate(-15deg) scale(0.95); }
+}
+
+.blob-1 { background: var(--accent-blue); width: 500px; height: 500px; top: -10%; left: -10%; }
+.blob-2 { background: var(--accent-red); width: 400px; height: 400px; bottom: -5%; right: -5%; animation-delay: -2s; }
+.blob-3 { background: var(--accent-yellow); width: 350px; height: 350px; top: 30%; right: 10%; animation-delay: -6s; }
+.blob-4 { background: var(--accent-green); width: 450px; height: 450px; bottom: 10%; left: 15%; animation-delay: -4s; filter: blur(80px); }
+
+/* Google Lens Floating Elements & Shapes */
+.shape {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: var(--accent-blue);
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: blur(20px);
+  z-index: 0;
+}
+
+.shape-box {
+  width: 200px;
+  height: 200px;
+  background: var(--accent-yellow);
+  border-radius: 40px;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.floating-img {
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 20px 50px rgba(11, 28, 61, 0.15);
+  transition: transform var(--transition-slow);
+  position: relative;
+  z-index: 2;
+}
+
+.floating-img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.float-anim {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Scroll Navigation */
+.scroll-nav {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 15px 12px;
+  border-radius: 30px;
+  box-shadow: var(--box-shadow);
+  border: var(--glass-border);
+  animation: fadeNavIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+@keyframes fadeNavIn {
+  from { opacity: 0; transform: translate(20px, -50%); }
+  to { opacity: 1; transform: translate(0, -50%); }
+}
+
+.scroll-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.scroll-nav li {
+  position: relative;
+}
+
+.scroll-dot {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(10, 25, 47, 0.3);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.scroll-dot:hover {
+  background: var(--primary-color);
+  transform: scale(1.3);
+}
+
+.scroll-dot.active {
+  background: var(--primary-color);
+  height: 28px;
+  border-radius: 12px;
+  transform: scale(1.1);
+}
+
+.scroll-dot span {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%) translateX(10px);
+  background: var(--secondary-color);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  pointer-events: none;
+}
+
+.scroll-dot:hover span {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Hide on mobile for better UX */
+@media (max-width: 768px) {
+  .scroll-nav {
+    display: none;
+  }
+}
