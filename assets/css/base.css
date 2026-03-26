@@ -13,7 +13,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--secondary-color);
   font-weight: 700;
@@ -35,9 +40,10 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: var(--border-radius-lg);
+  : var(---lg);
   transition: transform var(--transition-slow);
 }
+
 img:hover {
   transform: scale(1.02);
 }
@@ -53,7 +59,9 @@ img:hover {
   padding: 60px 0;
 }
 
-.text-center { text-align: center; }
+.text-center {
+  text-align: center;
+}
 
 .section-title {
   font-size: 2.5rem;
@@ -72,7 +80,7 @@ img:hover {
   width: 60px;
   height: 4px;
   background-color: var(--primary-color);
-  border-radius: 2px;
+  : 2px;
 }
 
 .section-title.left-align::after {

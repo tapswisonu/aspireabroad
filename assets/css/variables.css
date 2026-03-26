@@ -16,9 +16,9 @@
   --transition-slow: 0.6s cubic-bezier(0.2, 0, 0, 1);
   --font-main: 'Inter', sans-serif;
   --font-heading: 'Poppins', sans-serif;
-  --border-radius: 24px;
-  --border-radius-lg: 40px;
-  --border-radius-pill: 50px;
+  --: 24px;
+  ---lg: 40px;
+  ---pill: 50px;
   --box-shadow: 0 12px 36px rgba(11, 28, 61, 0.04);
   --box-shadow-hover: 0 20px 48px rgba(11, 28, 61, 0.1);
   --glass-bg: rgba(255, 255, 255, 0.9);
